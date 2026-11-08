@@ -42,7 +42,9 @@ hide: [route]           # optional; layers hidden until tapped in the legend:
 connection: auto        # optional; auto | proxy | ingress
 entry: <entry id>       # optional; proxy, only with more than one robot
 app: <app slug>         # optional; ingress, found by itself
-url: http://host:8787   # optional; call the backend directly (its port must be open)
+url: http://host:8787   # optional; call the backend directly: its port must be open, this site
+                        # in its cors_origins, and its API token below
+token: <api token>      # optional; only with url
 ```
 
 The floor choice is shared: switching floors in the card also switches the integration's
